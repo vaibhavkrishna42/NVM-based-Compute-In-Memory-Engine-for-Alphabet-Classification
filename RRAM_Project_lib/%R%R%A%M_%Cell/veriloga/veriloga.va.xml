@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<file name="C:\ADS\RRAM_Project\RRAM_Project_lib\%R%R%A%M_%Cell\veriloga\veriloga.va">
+    <module name="RRAM">
+        <portList>
+            <port name="TE" direction="inout" />
+            <port name="BE" direction="inout" />
+            <port name="G" />
+            <port name="T" />
+        </portList>
+        <paramList>
+            <param name="k" type="real" default="1.38e-23" />
+            <param name="q" type="real" default="1.602e-19" />
+            <param name="g0" type="real" default="0.2e-9" />
+            <param name="V0" type="real" default="0.5" />
+            <param name="I0" type="real" default="0.65e-4" />
+            <param name="ve0" type="real" default="5e6" />
+            <param name="Eam" type="real" default="0.9" />
+            <param name="a" type="real" default="0.3e-10" />
+            <param name="gamma0" type="real" default="22.5" />
+            <param name="b" type="real" default="1.0" />
+            <param name="c" type="real" default="1.0" />
+            <param name="L" type="real" default="8e-9" />
+            <param name="gmax" type="real" default="3.3e-9" />
+            <param name="gmin" type="real" default="5e-10" />
+            <param name="gini" type="real" default="3.3e-9" />
+            <param name="r_cf" type="real" default="8e-9" />
+            <param name="rho" type="real" default="2.8e-3" />
+            <param name="Rth" type="real" default="3e6" />
+            <param name="Tamb" type="real" default="300.0" />
+            <param name="CC" type="real" default="10e-6" />
+        </paramList>
+        <variableList>
+            <variable name="Ig" type="real" />
+            <variable name="R" type="real" />
+            <variable name="area" type="real" />
+            <variable name="gamma" type="real" />
+            <variable name="gap" type="real" />
+            <variable name="rand_seed" type="integer" />
+            <variable name="temp" type="real" />
+        </variableList>
+        <structure type="behavioral" />
+    </module>
+</file>
