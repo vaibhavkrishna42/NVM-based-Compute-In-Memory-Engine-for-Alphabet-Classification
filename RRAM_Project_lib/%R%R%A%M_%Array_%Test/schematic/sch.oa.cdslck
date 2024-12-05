@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      jaygu
 HostName                       LAPTOP-SDMPAGSO
-ProcessIdentifier              28380
-ProcessCreationTime_UTC        1733339250
-ProcessCreationTime_Readable   Thu Dec  5 00:37:30 2024 India Standard Time
+ProcessIdentifier              25244
+ProcessCreationTime_UTC        1733395244
+ProcessCreationTime_Readable   Thu Dec  5 16:10:44 2024 India Standard Time
 AppIdentifier                  OA File System Design Manager
 OSType                         win32
 ReasonForPlacingEditLock       OpenAccess edit lock
 FilePathUsedToEditLock         C:\ADS\RRAM_Project\RRAM_Project_lib\%R%R%A%M_%Array_%Test\schematic\sch.oa.cdslck
-TimeEditLocked                 Thu Dec  5 08:24:43 2024 India Standard Time
+TimeEditLocked                 Thu Dec  5 16:11:58 2024 India Standard Time
