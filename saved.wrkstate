@@ -1,5 +1,9 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
-    <Windows/>
+    <Windows>
+        <Schematic cell="RRAM_Array_single" view="schematic" lib="RRAM_Project_lib" x1="-1" y1="-9" height="991" width="1920" geom="1,0,2,142,166,1536,816,1920,1080"/>
+        <Schematic cell="RRAM_Array_Test" view="schematic" lib="RRAM_Project_lib" x1="-1" y1="-9" height="991" width="1920" geom="1,0,2,162,186,1536,816,1920,1080"/>
+        <DDS name="RRAM_Array_Test.dds"/>
+    </Windows>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>
