@@ -1,16 +1,270 @@
-; Top Design: "RRAM_Project_lib:RRAM_Array_Test:schematic"
+; Top Design: "RRAM_Project_lib:RRAM_Array_single:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="RRAM_Project_lib:RRAM_Array_Test:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="RRAM_Project_lib:RRAM_Array_single:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 simulator lang = spectre
 global 0
 ahdl_include "C:/ADS/RRAM_Project/RRAM_Project_lib/%%R%%R%%A%%M_%%Cell/veriloga/veriloga.va"
 
 
 simulator lang = ads
-V_Source:SRC34  V_gate_2 0 Type="VtPWL" V_Tran=pwl(time, 0ns,0V,99ns,0V,100ns,0V,200ns,0V,201ns,0V,299ns,0V,300ns,1.8V,399ns,1.8V,400ns,0V,500ns,0V) SaveCurrent=1 
-V_Source:SRC26  V_gate_1 0 Type="VtPWL" V_Tran=pwl(time, 0ns,0V,99ns,0V,100ns,1.8V,200ns,1.8V,201ns,0V,500ns,0V) SaveCurrent=1 
-Tran:Tran1 StartTime=0.0 nsec StopTime=500 nsec MaxTimeStep=0.5 nsec LimitStepForTL=yes TimeStepControl=2 TruncTol=7.0 ChargeTol=1.0e-14 IntegMethod=0 MaxGearOrder=2 \
+V_Source:SRC2  Feature_2 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 3V, 1199us, 3V, 1200us, 0V, 1299us, 0V, 1300us, 3V, 1399us, 3V, 1400us, 0V, 1499us, 0V, 1500us, 3V, 1599us, 3V, 1600us, 0V, 1699us, 0V, 1700us, i1, 1799us, i1, 1800us, 0V) SaveCurrent=1 
+simulator lang = spectre
+Cell_16_6 (Feature_16 N__108 0 0) RRAM
+Cell_16_3 (Feature_16 N__115 0 0) RRAM
+Cell_2_7 (Feature_2 N__105 0 0) RRAM
+Cell_2_1 (Feature_2 N__128 0 0) RRAM
+Cell_7_6 (Feature_7 N__108 0 0) RRAM
+Cell_7_5 (Feature_7 N__110 0 0) RRAM
+Cell_11_3 (Feature_11 N__115 0 0) RRAM
+Cell_8_5 (Feature_8 N__110 0 0) RRAM
+Cell_16_4 (Feature_16 N__113 0 0) RRAM
+Cell_12_5 (Feature_12 N__110 0 0) RRAM
+simulator lang = ads
+V_Source:SRC12  Feature_12 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i11, 1799us, i11, 1800us, 0V) SaveCurrent=1 
+simulator lang = spectre
+Cell_5_2 (Feature_5 N__118 0 0) RRAM
+Cell_9_5 (Feature_9 N__110 0 0) RRAM
+Cell_3_5 (Feature_3 N__110 0 0) RRAM
+Cell_5_4 (Feature_5 N__113 0 0) RRAM
+Cell_3_1 (Feature_3 N__128 0 0) RRAM
+Cell_17_4 (Bias N__113 0 0) RRAM
+Cell_15_8 (Feature_15 N__103 0 0) RRAM
+Cell_6_3 (Feature_6 N__115 0 0) RRAM
+Cell_5_7 (Feature_5 N__105 0 0) RRAM
+Cell_14_7 (Feature_14 N__105 0 0) RRAM
+Cell_6_7 (Feature_6 N__105 0 0) RRAM
+Cell_9_6 (Feature_9 N__108 0 0) RRAM
+Cell_14_1 (Feature_14 N__128 0 0) RRAM
+Cell_3_4 (Feature_3 N__113 0 0) RRAM
+Cell_1_6 (Feature_1 N__108 0 0) RRAM
+Cell_10_1 (Feature_10 N__128 0 0) RRAM
+Cell_11_4 (Feature_11 N__113 0 0) RRAM
+Cell_4_1 (Feature_4 N__128 0 0) RRAM
+Cell_15_2 (Feature_15 N__118 0 0) RRAM
+Cell_14_4 (Feature_14 N__113 0 0) RRAM
+Cell_8_2 (Feature_8 N__118 0 0) RRAM
+Cell_17_6 (Bias N__108 0 0) RRAM
+simulator lang = ads
+V_Source:SRC7  Feature_7 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i6, 1799us, i6, 1800us, 0V) SaveCurrent=1 
+simulator lang = spectre
+Cell_16_5 (Feature_16 N__110 0 0) RRAM
+Cell_12_4 (Feature_12 N__113 0 0) RRAM
+Cell_13_6 (Feature_13 N__108 0 0) RRAM
+Cell_1_3 (Feature_1 N__115 0 0) RRAM
+simulator lang = ads
+V_Source:SRC8  Feature_8 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i7, 1799us, i7, 1800us, 0V) SaveCurrent=1 
+simulator lang = spectre
+Cell_1_7 (Feature_1 N__105 0 0) RRAM
+Cell_8_8 (Feature_8 N__103 0 0) RRAM
+Cell_7_3 (Feature_7 N__115 0 0) RRAM
+Cell_13_1 (Feature_13 N__128 0 0) RRAM
+Cell_12_7 (Feature_12 N__105 0 0) RRAM
+Cell_3_2 (Feature_3 N__118 0 0) RRAM
+simulator lang = ads
+V_Source:SRC15  Feature_15 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 3V, 1199us, 3V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i14, 1799us, i14, 1800us, 0V) SaveCurrent=1 
+simulator lang = spectre
+Cell_16_2 (Feature_16 N__118 0 0) RRAM
+Cell_1_2 (Feature_1 N__118 0 0) RRAM
+Cell_4_3 (Feature_4 N__115 0 0) RRAM
+Cell_8_1 (Feature_8 N__128 0 0) RRAM
+Cell_6_5 (Feature_6 N__110 0 0) RRAM
+Cell_4_5 (Feature_4 N__110 0 0) RRAM
+simulator lang = ads
+V_Source:SRC5  Feature_5 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i4, 1799us, i4, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC10  Feature_10 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i9, 1799us, i9, 1800us, 0V) SaveCurrent=1 
+simulator lang = spectre
+Cell_15_4 (Feature_15 N__113 0 0) RRAM
+Cell_12_6 (Feature_12 N__108 0 0) RRAM
+Cell_3_8 (Feature_3 N__103 0 0) RRAM
+Cell_8_4 (Feature_8 N__113 0 0) RRAM
+Cell_15_1 (Feature_15 N__128 0 0) RRAM
+Cell_13_4 (Feature_13 N__113 0 0) RRAM
+Cell_7_1 (Feature_7 N__128 0 0) RRAM
+Cell_16_1 (Feature_16 N__128 0 0) RRAM
+Cell_5_8 (Feature_5 N__103 0 0) RRAM
+Cell_11_1 (Feature_11 N__128 0 0) RRAM
+Cell_12_1 (Feature_12 N__128 0 0) RRAM
+Cell_17_1 (Bias N__128 0 0) RRAM
+Cell_6_1 (Feature_6 N__128 0 0) RRAM
+Cell_1_1 (Feature_1 N__128 0 0) RRAM
+Cell_5_1 (Feature_5 N__128 0 0) RRAM
+Cell_9_1 (Feature_9 N__128 0 0) RRAM
+Cell_10_2 (Feature_10 N__118 0 0) RRAM
+Cell_6_2 (Feature_6 N__118 0 0) RRAM
+Cell_11_2 (Feature_11 N__118 0 0) RRAM
+Cell_12_2 (Feature_12 N__118 0 0) RRAM
+Cell_13_2 (Feature_13 N__118 0 0) RRAM
+Cell_14_2 (Feature_14 N__118 0 0) RRAM
+Cell_17_2 (Bias N__118 0 0) RRAM
+Cell_7_2 (Feature_7 N__118 0 0) RRAM
+Cell_2_2 (Feature_2 N__118 0 0) RRAM
+Cell_4_2 (Feature_4 N__118 0 0) RRAM
+Cell_9_2 (Feature_9 N__118 0 0) RRAM
+Cell_10_3 (Feature_10 N__115 0 0) RRAM
+Cell_12_3 (Feature_12 N__115 0 0) RRAM
+Cell_13_3 (Feature_13 N__115 0 0) RRAM
+Cell_14_3 (Feature_14 N__115 0 0) RRAM
+Cell_15_3 (Feature_15 N__115 0 0) RRAM
+Cell_17_3 (Bias N__115 0 0) RRAM
+Cell_8_3 (Feature_8 N__115 0 0) RRAM
+Cell_5_3 (Feature_5 N__115 0 0) RRAM
+Cell_2_3 (Feature_2 N__115 0 0) RRAM
+Cell_3_3 (Feature_3 N__115 0 0) RRAM
+Cell_9_4 (Feature_9 N__113 0 0) RRAM
+Cell_9_3 (Feature_9 N__115 0 0) RRAM
+Cell_10_4 (Feature_10 N__113 0 0) RRAM
+Cell_7_4 (Feature_7 N__113 0 0) RRAM
+Cell_6_4 (Feature_6 N__113 0 0) RRAM
+Cell_2_4 (Feature_2 N__113 0 0) RRAM
+Cell_1_4 (Feature_1 N__113 0 0) RRAM
+Cell_4_4 (Feature_4 N__113 0 0) RRAM
+Cell_10_5 (Feature_10 N__110 0 0) RRAM
+Cell_11_5 (Feature_11 N__110 0 0) RRAM
+Cell_3_7 (Feature_3 N__105 0 0) RRAM
+Cell_13_5 (Feature_13 N__110 0 0) RRAM
+Cell_14_5 (Feature_14 N__110 0 0) RRAM
+Cell_15_5 (Feature_15 N__110 0 0) RRAM
+Cell_17_5 (Bias N__110 0 0) RRAM
+Cell_2_5 (Feature_2 N__110 0 0) RRAM
+Cell_1_5 (Feature_1 N__110 0 0) RRAM
+Cell_5_5 (Feature_5 N__110 0 0) RRAM
+Cell_10_6 (Feature_10 N__108 0 0) RRAM
+simulator lang = ads
+V_Source:SRC14  Feature_14 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i13, 1799us, i13, 1800us, 0V) SaveCurrent=1 
+simulator lang = spectre
+Cell_11_6 (Feature_11 N__108 0 0) RRAM
+Cell_14_6 (Feature_14 N__108 0 0) RRAM
+Cell_15_6 (Feature_15 N__108 0 0) RRAM
+Cell_8_6 (Feature_8 N__108 0 0) RRAM
+Cell_6_6 (Feature_6 N__108 0 0) RRAM
+Cell_5_6 (Feature_5 N__108 0 0) RRAM
+Cell_2_6 (Feature_2 N__108 0 0) RRAM
+Cell_3_6 (Feature_3 N__108 0 0) RRAM
+Cell_4_6 (Feature_4 N__108 0 0) RRAM
+Cell_10_7 (Feature_10 N__105 0 0) RRAM
+Cell_11_7 (Feature_11 N__105 0 0) RRAM
+Cell_13_7 (Feature_13 N__105 0 0) RRAM
+Cell_15_7 (Feature_15 N__105 0 0) RRAM
+Cell_16_7 (Feature_16 N__105 0 0) RRAM
+Cell_17_7 (Bias N__105 0 0) RRAM
+Cell_8_7 (Feature_8 N__105 0 0) RRAM
+Cell_7_7 (Feature_7 N__105 0 0) RRAM
+Cell_4_7 (Feature_4 N__105 0 0) RRAM
+Cell_9_7 (Feature_9 N__105 0 0) RRAM
+Cell_17_8 (Bias N__103 0 0) RRAM
+Cell_16_8 (Feature_16 N__103 0 0) RRAM
+Cell_14_8 (Feature_14 N__103 0 0) RRAM
+Cell_13_8 (Feature_13 N__103 0 0) RRAM
+Cell_12_8 (Feature_12 N__103 0 0) RRAM
+Cell_11_8 (Feature_11 N__103 0 0) RRAM
+Cell_10_8 (Feature_10 N__103 0 0) RRAM
+Cell_9_8 (Feature_9 N__103 0 0) RRAM
+Cell_7_8 (Feature_7 N__103 0 0) RRAM
+Cell_6_8 (Feature_6 N__103 0 0) RRAM
+Cell_2_8 (Feature_2 N__103 0 0) RRAM
+Cell_1_8 (Feature_1 N__103 0 0) RRAM
+Cell_4_8 (Feature_4 N__103 0 0) RRAM
+simulator lang = ads
+V_Source:SRC11  Feature_11 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i10, 1799us, i10, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC13  Feature_13 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 3V, 999us, 3V, 1000us, 0V, 1099us, 0V, 1100us, 3V, 1199us, 3V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 3V, 1599us, 3V, 1600us, 0V, 1699us, 0V, 1700us, i12, 1799us, i12, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC16  Feature_16 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 3V, 999us, 3V, 1000us, 0V, 1099us, 0V, 1100us, 3V, 1199us, 3V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 3V, 1599us, 3V, 1600us, 0V, 1699us, 0V, 1700us, i15, 1799us, i15, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC17  Bias 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, 0.5V, 1799us, 0.5V, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC1  Feature_1 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i0, 1799us, i0, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC3  Feature_3 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 3V, 1399us, 3V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i2, 1799us, i2, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC4  Feature_4 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 3V, 1199us, 3V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i3, 1799us, i3, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC6  Feature_6 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 3V, 1199us, 3V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 3V, 1599us, 3V, 1600us, 0V, 1699us, 0V, 1700us, i5, 1799us, i5, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC9  Feature_9 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 1V, 999us, 1V, 1000us, 0V, 1099us, 0V, 1100us, 1V, 1199us, 1V, 1200us, 0V, 1299us, 0V, 1300us, 1V, 1399us, 1V, 1400us, 0V, 1499us, 0V, 1500us, 1V, 1599us, 1V, 1600us, 0V, 1699us, 0V, 1700us, i8, 1799us, i8, 1800us, 0V) SaveCurrent=1 
+simulator lang = spectre
+Cell_7__4 (Hidden_7 N__65 0 0) RRAM
+Cell_7__1 (Hidden_7 N__46 0 0) RRAM
+Cell_5__4 (Hidden_5 N__65 0 0) RRAM
+Cell_9__4 (Bias_Hidden N__65 0 0) RRAM
+Cell_8__4 (Hidden_8 N__65 0 0) RRAM
+Cell_9__1 (Bias_Hidden N__46 0 0) RRAM
+Cell_9__2 (Bias_Hidden N__93 0 0) RRAM
+Cell_9__3 (Bias_Hidden N__43 0 0) RRAM
+Cell_8__1 (Hidden_8 N__46 0 0) RRAM
+Cell_8__2 (Hidden_8 N__93 0 0) RRAM
+Cell_8__3 (Hidden_8 N__43 0 0) RRAM
+Cell_7__2 (Hidden_7 N__93 0 0) RRAM
+Cell_7__3 (Hidden_7 N__43 0 0) RRAM
+Cell_6__1 (Hidden_6 N__46 0 0) RRAM
+Cell_5__3 (Hidden_5 N__43 0 0) RRAM
+Cell_6__2 (Hidden_6 N__93 0 0) RRAM
+Cell_6__3 (Hidden_6 N__43 0 0) RRAM
+Cell_6__4 (Hidden_6 N__65 0 0) RRAM
+Cell_5__1 (Hidden_5 N__46 0 0) RRAM
+Cell_5__2 (Hidden_5 N__93 0 0) RRAM
+Cell_4__4 (Hidden_4 N__65 0 0) RRAM
+Cell_4__3 (Hidden_4 N__43 0 0) RRAM
+Cell_4__2 (Hidden_4 N__93 0 0) RRAM
+Cell_4__1 (Hidden_4 N__46 0 0) RRAM
+Cell_3__1 (Hidden_3 N__46 0 0) RRAM
+Cell_3__2 (Hidden_3 N__93 0 0) RRAM
+Cell_3__3 (Hidden_3 N__43 0 0) RRAM
+Cell_3__4 (Hidden_3 N__65 0 0) RRAM
+Cell_1__4 (Hidden_1 N__65 0 0) RRAM
+Cell_1__3 (Hidden_1 N__43 0 0) RRAM
+Cell_1__2 (Hidden_1 N__93 0 0) RRAM
+Cell_1__1 (Hidden_1 N__46 0 0) RRAM
+Cell_2__1 (Hidden_2 N__46 0 0) RRAM
+Cell_2__2 (Hidden_2 N__93 0 0) RRAM
+Cell_2__3 (Hidden_2 N__43 0 0) RRAM
+Cell_2__4 (Hidden_2 N__65 0 0) RRAM
+simulator lang = ads
+"NMOS":MOSFET40  N__126 N__416 N__437 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET34  N__104 N__416 N__450 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET35  N__106 N__416 N__446 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET36  N__109 N__416 N__421 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET37  N__111 N__416 N__397 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET38  N__114 N__416 N__433 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET39  N__116 N__416 N__405 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET2  N__126 N__410 Bitline_1 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+V_Source:SRC18  Bitline_1 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 0V, 199us, 0V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 2V, 999us, 2V, 1000us, 0V, 1099us, 0V, 1100us, 2V, 1199us, 2V, 1200us, 0V, 1299us, 0V, 1300us, 2V, 1399us, 2V, 1400us, 0V, 1499us, 0V, 1500us, 2V, 1599us, 2V, 1600us, 0V, 1699us, 0V, 1700us, 0V, 1799us, 0V, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC19  Bitline_2 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 0V, 399us, 0V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 2V, 999us, 2V, 1000us, 0V, 1099us, 0V, 1100us, 2V, 1199us, 2V, 1200us, 0V, 1299us, 0V, 1300us, 2V, 1399us, 2V, 1400us, 0V, 1499us, 0V, 1500us, 2V, 1599us, 2V, 1600us, 0V, 1699us, 0V, 1700us, 0V, 1799us, 0V, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC20  Bitline_3 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 0V, 599us, 0V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 2V, 999us, 2V, 1000us, 0V, 1099us, 0V, 1100us, 2V, 1199us, 2V, 1200us, 0V, 1299us, 0V, 1300us, 2V, 1399us, 2V, 1400us, 0V, 1499us, 0V, 1500us, 2V, 1599us, 2V, 1600us, 0V, 1699us, 0V, 1700us, 0V, 1799us, 0V, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC21  Bitline_4 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 0V, 799us, 0V, 800us, 0V, 899us, 0V, 900us, 2V, 999us, 2V, 1000us, 0V, 1099us, 0V, 1100us, 2V, 1199us, 2V, 1200us, 0V, 1299us, 0V, 1300us, 2V, 1399us, 2V, 1400us, 0V, 1499us, 0V, 1500us, 2V, 1599us, 2V, 1600us, 0V, 1699us, 0V, 1700us, 0V, 1799us, 0V, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC22  Bitline_5 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 0V, 999us, 0V, 1000us, 0V, 1099us, 0V, 1100us, 2V, 1199us, 2V, 1200us, 0V, 1299us, 0V, 1300us, 2V, 1399us, 2V, 1400us, 0V, 1499us, 0V, 1500us, 2V, 1599us, 2V, 1600us, 0V, 1699us, 0V, 1700us, 0V, 1799us, 0V, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC23  Bitline_6 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 2V, 999us, 2V, 1000us, 0V, 1099us, 0V, 1100us, 0V, 1199us, 0V, 1200us, 0V, 1299us, 0V, 1300us, 2V, 1399us, 2V, 1400us, 0V, 1499us, 0V, 1500us, 2V, 1599us, 2V, 1600us, 0V, 1699us, 0V, 1700us, 0V, 1799us, 0V, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC24  Bitline_7 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 2V, 999us, 2V, 1000us, 0V, 1099us, 0V, 1100us, 2V, 1199us, 2V, 1200us, 0V, 1299us, 0V, 1300us, 0V, 1399us, 0V, 1400us, 0V, 1499us, 0V, 1500us, 2V, 1599us, 2V, 1600us, 0V, 1699us, 0V, 1700us, 0V, 1799us, 0V, 1800us, 0V) SaveCurrent=1 
+V_Source:SRC26  N__410 0 Type="VtPWL" V_Tran=pwl(time, 0us,2.5V,1599us,2.5V,1600us,0V,1800us,0V) SaveCurrent=1 
+"NMOS":MOSFET33  N__101 N__416 N__454 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET32  N__101 N__410 Bitline_8 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET31  N__104 N__410 Bitline_7 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET30  N__106 N__410 Bitline_6 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET29  N__109 N__410 Bitline_5 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET28  N__111 N__410 Bitline_4 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET27  N__114 N__410 Bitline_3 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET26  N__116 N__410 Bitline_2 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+V_Source:SRC34  N__416 0 Type="VtPWL" V_Tran=pwl(time, 0us,0V,1600us,0V,1601us,2.5V,1800us,2.5V) SaveCurrent=1 
+simulator lang=spice
+.include 'D:/RRAM_Project/180nm_spice.pl'
+simulator lang=ads
+V_Source:SRC36  N__427 0 Type="VtPWL" V_Tran=pwl(time, 0us,2.5V,900us,2.5V,901us,0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC37  N__8 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 0V, 199us, 0V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+"NMOS":MOSFET18  N__100 N__427 N__8 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+V_Source:SRC40  N__424 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 0V, 399us, 0V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC43  N__428 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 0V, 599us, 0V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC46  N__432 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 0V, 799us, 0V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC47  N__435 0 Type="VtPWL" V_Tran=pwl(time, 0us,0V,900us,0V,901us,2.5V,1800us,2.5V) SaveCurrent=1 
+#uselib "ckt" , "CCVS"
+CCVS:SRC35  N__437 0 output_1 0 G=10 kOhm T=0.0 nsec R1=1 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC48  N__405 0 output_2 0 G=10 kOhm T=0.0 nsec R1=1 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC49  N__433 0 output_3 0 G=10 kOhm T=0.0 nsec R1=1 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC50  N__397 0 output_4 0 G=10 kOhm T=0.0 nsec R1=1 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC53  N__450 0 output_7 0 G=10 kOhm T=0.0 nsec R1=1 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC52  N__446 0 output_6 0 G=10 kOhm T=0.0 nsec R1=1 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC51  N__421 0 output_5 0 G=10 kOhm T=0.0 nsec R1=1 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC54  N__454 0 output_8 0 G=10 kOhm T=0.0 nsec R1=1 Ohm R2=0 Ohm F=0.0 GHz 
+Tran:Tran1 StartTime=0.0 usec StopTime=1800 usec MaxTimeStep=0.5 usec LimitStepForTL=yes TimeStepControl=2 TruncTol=7.0 ChargeTol=1.0e-14 IntegMethod=0 MaxGearOrder=2 \
 Mu=0.5 MaxOrder=4 Freq[1]=1.0 GHz Order[1]=3 HB_Window=no \
 HB_Sol=no ImpApprox=no ShortTL_Delay=1.0 psec ImpMode=1 UseInitCond=no \
 LoadGminDC=no CheckKCL=yes CheckOnlyDeltaV=yes OverloadAlert=no DeviceBypass=no \
@@ -36,17 +290,110 @@ OutputPlan:Tran1_Output \
       DeviceVoltageNestLevel=0 \
       DeviceVoltageDeviceType="All"
 
-Short:I_Probe2  0 G Mode=0 SaveCurrent=yes 
-V_Source:SRC17  Input 0 Type="VtPWL" V_Tran=pwl(time, 0ns,0V,99ns,0V,100ns,5V,200ns,5V,201ns,0V,299ns,0V,300ns,1V,399ns,1V,400ns,0V,500ns,0V) SaveCurrent=1 
-simulator lang=spice
-.include 'D:/RRAM_Project/180nm_spice.pl'
-simulator lang=ads
-"NMOS":MOSFET2  N__8 V_gate_1 0 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET10  N__8 V_gate_2 N__15 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-Short:I_Probe3  N__15 N__9 Mode=0 SaveCurrent=yes 
 #uselib "ckt" , "CCVS"
-CCVS:SRC35  N__9 0 output 0 G=100 kOhm T=0.0 nsec R1=0 MOhm R2=0 Ohm F=0.0 GHz 
-Short:I_Probe1  N__4 N__8 Mode=0 SaveCurrent=yes 
-simulator lang = spectre
-Cell_17_1 (Input N__4 G N__11) RRAM
-simulator lang = ads
+CCVS:SRC58  N__444 0 X 0 G=100 kOhm T=0.0 nsec R1=0 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC55  N__438 0 A 0 G=100 kOhm T=0.0 nsec R1=0 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC56  N__440 0 T 0 G=100 kOhm T=0.0 nsec R1=0 Ohm R2=0 Ohm F=0.0 GHz 
+#uselib "ckt" , "CCVS"
+CCVS:SRC57  N__442 0 V 0 G=100 kOhm T=0.0 nsec R1=0 Ohm R2=0 Ohm F=0.0 GHz 
+Short:I_Probe7  N__105 N__104 Mode=0 SaveCurrent=yes 
+Short:I_Probe5  N__110 N__109 Mode=0 SaveCurrent=yes 
+Short:I_Probe3  N__115 N__114 Mode=0 SaveCurrent=yes 
+Short:I_Probe4  N__113 N__111 Mode=0 SaveCurrent=yes 
+"NMOS":MOSFET41  Hidden_1 N__119 N__45 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET42  Hidden_2 N__119 N__68 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+Short:I_Probe1  N__128 N__126 Mode=0 SaveCurrent=yes 
+Short:I_Probe2  N__118 N__116 Mode=0 SaveCurrent=yes 
+Short:I_Probe8  N__103 N__101 Mode=0 SaveCurrent=yes 
+Short:I_Probe6  N__108 N__106 Mode=0 SaveCurrent=yes 
+V_Source:SRC59  Bias_Hidden 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1699,0V,1700us,0.5V,1800us,0.5V) SaveCurrent=1 
+"NMOS":MOSFET43  Hidden_3 N__119 N__48 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET44  Hidden_4 N__119 N__123 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET45  Hidden_5 N__119 N__97 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET46  Hidden_6 N__119 N__99 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET47  Hidden_7 N__119 N__38 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET48  Hidden_8 N__119 N__36 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET49  Hidden_1 N__57 N__95 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET50  Hidden_2 N__57 N__37 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET51  Hidden_3 N__57 N__66 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET52  Hidden_4 N__57 N__54 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET53  Hidden_5 N__57 N__125 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET54  Hidden_6 N__57 N__47 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET55  Hidden_7 N__57 N__42 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET56  Hidden_8 N__57 N__129 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+V_Source:SRC25  Bitline_8 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 2V, 999us, 2V, 1000us, 0V, 1099us, 0V, 1100us, 2V, 1199us, 2V, 1200us, 0V, 1299us, 0V, 1300us, 2V, 1399us, 2V, 1400us, 0V, 1499us, 0V, 1500us, 0V, 1599us, 0V, 1600us, 0V, 1699us, 0V, 1700us, 0V, 1799us, 0V, 1800us, 0V) SaveCurrent=1 
+
+i0=0.5
+
+i1=0.5
+
+i2=0.5
+
+i3=0.5
+
+i4=0.5
+
+i5=0.5
+
+i6=0.5
+
+i7=0.5
+
+i8=0.5
+
+i9=0.5
+
+i10=0.5
+
+i11=0.5
+
+i12=0.5
+
+i13=0.5
+
+i14=0.5
+
+i15=0.5
+V_Source:SRC60  N__45 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC61  N__68 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC62  N__48 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC63  N__123 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC64  N__97 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC65  N__99 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC66  N__38 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC67  N__36 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC68  N__57 0 Type="VtPWL" V_Tran=pwl(time, 0us,0V,900us,0V,901us,2.5V,1800us,2.5V) SaveCurrent=1 
+V_Source:SRC69  N__119 0 Type="VtPWL" V_Tran=pwl(time, 0us,2.5V,900us,2.5V,901us,0V,1800us,0V) SaveCurrent=1 
+Short:I_Probe9  N__46 N__100 Mode=0 SaveCurrent=yes 
+Short:I_Probe10  N__93 N__41 Mode=0 SaveCurrent=yes 
+Short:I_Probe11  N__43 N__40 Mode=0 SaveCurrent=yes 
+Short:I_Probe12  N__65 N__121 Mode=0 SaveCurrent=yes 
+R:R1  N__44 N__95 R=50 Ohm Noise=yes 
+R:R2  N__29 N__37 R=50 Ohm Noise=yes 
+R:R3  N__120 N__66 R=50 Ohm Noise=yes 
+R:R4  N__28 N__54 R=50 Ohm Noise=yes 
+R:R5  N__60 N__125 R=50 Ohm Noise=yes 
+R:R6  N__26 N__47 R=50 Ohm Noise=yes 
+R:R7  N__51 N__42 R=50 Ohm Noise=yes 
+R:R8  N__25 N__129 R=50 Ohm Noise=yes 
+R:R9  N__95 0 R=50 Ohm Noise=yes 
+R:R10  N__37 0 R=50 Ohm Noise=yes 
+R:R11  N__66 0 R=50 Ohm Noise=yes 
+R:R12  N__54 0 R=50 Ohm Noise=yes 
+R:R13  N__125 0 R=50 Ohm Noise=yes 
+R:R14  N__47 0 R=50 Ohm Noise=yes 
+R:R15  N__42 0 R=50 Ohm Noise=yes 
+R:R16  N__129 0 R=50 Ohm Noise=yes 
+Short:A  A 0 Mode=0 SaveCurrent=yes 
+Short:T  T 0 Mode=0 SaveCurrent=yes 
+Short:V  V 0 Mode=0 SaveCurrent=yes 
+Short:X  X 0 Mode=0 SaveCurrent=yes 
+"NMOS":MOSFET57  N__41 N__427 N__424 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET58  N__40 N__427 N__428 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET59  N__121 N__427 N__432 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET60  N__100 N__435 N__438 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET61  N__41 N__435 N__440 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET62  N__40 N__435 N__442 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET63  N__121 N__435 N__444 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
