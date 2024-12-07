@@ -225,22 +225,14 @@ V_Source:SRC34  N__416 0 Type="VtPWL" V_Tran=pwl(time, 0us,0V,1600us,0V,1601us,3
 simulator lang=spice
 .include 'D:/RRAM_Project/180nm_spice.pl'
 simulator lang=ads
-V_Source:SRC36  N__427 0 Type="VtPWL" V_Tran=pwl(time, 0us,2.5V,900us,2.5V,901us,0V,1800us,0V) SaveCurrent=1 
-V_Source:SRC37  N__8 0 Type="VtPWL" V_Tran=pwl(time, 0ns,0V, 10ns,1V, 20ns,0V) SaveCurrent=1 
-"NMOS":MOSFET18  N__100 N__427 N__8 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET60  N__100 N__435 N__438 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-V_Source:SRC40  N__424 0 Type="VtPWL" V_Tran=pwl(time, 0ns,0V, 10ns,1V, 20ns,0V) SaveCurrent=1 
-"NMOS":MOSFET63  N__121 N__435 N__444 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET59  N__121 N__72 N__432 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-V_Source:SRC43  N__428 0 Type="VtPWL" V_Tran=pwl(time, 0ns,0V, 10ns,1V, 20ns,0V) SaveCurrent=1 
-"NMOS":MOSFET62  N__40 N__435 N__442 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET58  N__40 N__78 N__428 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-Short:I_Probe15  T 0 Mode=0 SaveCurrent=yes 
-V_Source:SRC46  N__432 0 Type="VtPWL" V_Tran=pwl(time, 0ns,0V, 10ns,1V, 20ns,0V) SaveCurrent=1 
-V_Source:SRC47  N__435 0 Type="VtPWL" V_Tran=pwl(time, 0us,0V,900us,0V,901us,2.5V,1800us,2.5V) SaveCurrent=1 
-Short:I_Probe16  V 0 Mode=0 SaveCurrent=yes 
-"NMOS":MOSFET61  N__41 N__435 N__440 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET57  N__41 N__74 N__424 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+V_Source:SRC36  N__78 0 Type="VtPWL" V_Tran=pwl(time, 0us,3V,900us,3V,901us,0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC37  Bitline_hidden_1 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 0V, 199us, 0V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC40  Bitline_hidden_2 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 0V, 399us, 0V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC43  Bitline_hidden_3 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 0V, 599us, 0V, 600us, 0V, 699us, 0V, 700us, 2V, 799us, 2V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+Short:V  V 0 Mode=0 SaveCurrent=yes 
+V_Source:SRC46  Bitline_hidden_4 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 2V, 199us, 2V, 200us, 0V, 299us, 0V, 300us, 2V, 399us, 2V, 400us, 0V, 499us, 0V, 500us, 2V, 599us, 2V, 600us, 0V, 699us, 0V, 700us, 0V, 799us, 0V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC47  N__435 0 Type="VtPWL" V_Tran=pwl(time, 0us,0V,900us,0V,901us,3V,1800us,3V) SaveCurrent=1 
+Short:X  X 0 Mode=0 SaveCurrent=yes 
 #uselib "ckt" , "CCVS"
 CCVS:SRC35  N__437 0 output_1 0 G=10 kOhm T=0.0 nsec R1=1 Ohm R2=0 Ohm F=0.0 GHz 
 #uselib "ckt" , "CCVS"
@@ -283,71 +275,49 @@ OutputPlan:Tran1_Output \
       DeviceVoltageNestLevel=0 \
       DeviceVoltageDeviceType="All"
 
-#uselib "ckt" , "CCVS"
-CCVS:SRC58  N__444 0 V 0 G=100 kOhm T=0.0 nsec R1=0 Ohm R2=0 Ohm F=0.0 GHz 
-#uselib "ckt" , "CCVS"
-CCVS:SRC55  N__438 0 A 0 G=100 kOhm T=0.0 nsec R1=0 Ohm R2=0 Ohm F=0.0 GHz 
-#uselib "ckt" , "CCVS"
-CCVS:SRC56  N__440 0 X 0 G=100 kOhm T=0.0 nsec R1=0 Ohm R2=0 Ohm F=0.0 GHz 
-#uselib "ckt" , "CCVS"
-CCVS:SRC57  N__442 0 T 0 G=100 kOhm T=0.0 nsec R1=0 Ohm R2=0 Ohm F=0.0 GHz 
 Short:I_Probe7  N__105 N__104 Mode=0 SaveCurrent=yes 
 Short:I_Probe5  N__110 N__109 Mode=0 SaveCurrent=yes 
 Short:I_Probe3  N__115 N__114 Mode=0 SaveCurrent=yes 
 Short:I_Probe4  N__113 N__111 Mode=0 SaveCurrent=yes 
-"NMOS":MOSFET41  Hidden_1 N__119 N__45 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET42  Hidden_2 N__119 N__68 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+"NMOS":MOSFET41  Hidden_1 N__119 N__45 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
 Short:I_Probe1  N__128 N__126 Mode=0 SaveCurrent=yes 
 Short:I_Probe2  N__118 N__116 Mode=0 SaveCurrent=yes 
 Short:I_Probe8  N__103 N__101 Mode=0 SaveCurrent=yes 
 Short:I_Probe6  N__108 N__106 Mode=0 SaveCurrent=yes 
-V_Source:SRC59  Bias_Hidden 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1699,0V,1700us,0.5V,1800us,0.5V) SaveCurrent=1 
-"NMOS":MOSFET43  Hidden_3 N__119 N__48 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET44  Hidden_4 N__119 N__123 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET45  Hidden_5 N__119 N__97 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET46  Hidden_6 N__119 N__99 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET47  Hidden_7 N__119 N__38 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET48  Hidden_8 N__119 N__36 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
+V_Source:SRC59  Bias_Hidden 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1699us,0V,1700us,0.5V,1800us,0.5V) SaveCurrent=1 
 
-i0=0.5
+i0=0
 
 i1=0.5
 
 i3=0.5
 
-i2=0.5
+i2=0
 
-i4=0.5
+i4=0
 
-i5=0.5
+i5=0
 
 i6=0.5
 
-i7=0.5
+i7=0
 
 i10=0.5
 
 i9=0.5
 "NMOS":MOSFET49  Hidden_1 N__57 N__95 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
-"NMOS":MOSFET50  Hidden_2 N__57 N__37 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET51  Hidden_3 N__57 N__66 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET52  Hidden_4 N__57 N__54 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET53  Hidden_5 N__57 N__125 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET54  Hidden_6 N__57 N__47 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET55  Hidden_7 N__57 N__42 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
-"NMOS":MOSFET56  Hidden_8 N__57 N__129 0 Length=180 nm Width=1800 nm Mode=1 Noise=yes 
 
 i11=0.5
 
-i8=0.5
+i8=0
 
 i12=0.5
 
-i13=0.5
+i13=0
 
-i14=0.5
+i14=0
 
-i15=0.5
+i15=0
 V_Source:SRC60  N__45 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
 V_Source:SRC61  N__68 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
 V_Source:SRC62  N__48 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 1V, 399us, 1V, 400us, 0V, 499us, 0V, 500us, 3V, 599us, 3V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
@@ -356,17 +326,14 @@ V_Source:SRC64  N__97 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 
 V_Source:SRC65  N__99 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
 V_Source:SRC66  N__38 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 3V, 199us, 3V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 1V, 799us, 1V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
 V_Source:SRC67  N__36 0 Type="VtPWL" V_Tran=pwl(time, 0us, 0V, 99us, 0V, 100us, 1V, 199us, 1V, 200us, 0V, 299us, 0V, 300us, 3V, 399us, 3V, 400us, 0V, 499us, 0V, 500us, 1V, 599us, 1V, 600us, 0V, 699us, 0V, 700us, 3V, 799us, 3V, 800us, 0V, 899us, 0V, 900us, 0V,1800us,0V) SaveCurrent=1 
-V_Source:SRC68  N__57 0 Type="VtPWL" V_Tran=pwl(time, 0us,0V,900us,0V,901us,2.5V,1800us,2.5V) SaveCurrent=1 
-V_Source:SRC69  N__119 0 Type="VtPWL" V_Tran=pwl(time, 0us,2.5V,900us,2.5V,901us,0V,1800us,0V) SaveCurrent=1 
+V_Source:SRC68  N__57 0 Type="VtPWL" V_Tran=pwl(time, 0us,0V,900us,0V,901us,3V,1800us,3V) SaveCurrent=1 
+V_Source:SRC69  N__119 0 Type="VtPWL" V_Tran=pwl(time, 0us,5V,900us,5V,901us,0V,1800us,0V) SaveCurrent=1 
 Short:I_Probe9  N__46 N__100 Mode=0 SaveCurrent=yes 
 Short:I_Probe10  N__93 N__41 Mode=0 SaveCurrent=yes 
 Short:I_Probe11  N__43 N__40 Mode=0 SaveCurrent=yes 
 Short:I_Probe12  N__65 N__121 Mode=0 SaveCurrent=yes 
-V_Source:SRC70  N__74 0 Type="VtPWL" V_Tran=pwl(time, 0us,2.5V,900us,2.5V,901us,0V,1800us,0V) SaveCurrent=1 
-Short:I_Probe14  X 0 Mode=0 SaveCurrent=yes 
-Short:I_Probe13  A 0 Mode=0 SaveCurrent=yes 
-V_Source:SRC72  N__72 0 Type="VtPWL" V_Tran=pwl(time, 0us,2.5V,900us,2.5V,901us,0V,1800us,0V) SaveCurrent=1 
-V_Source:SRC71  N__78 0 Type="VtPWL" V_Tran=pwl(time, 0us,2.5V,900us,2.5V,901us,0V,1800us,0V) SaveCurrent=1 
+Short:T  T 0 Mode=0 SaveCurrent=yes 
+Short:A  A 0 Mode=0 SaveCurrent=yes 
 R:R1  N__94 N__95 R=50 Ohm Noise=yes 
 R:R2  N__29 N__37 R=50 Ohm Noise=yes 
 R:R3  N__120 N__66 R=50 Ohm Noise=yes 
@@ -407,3 +374,41 @@ V_Source:SRC76  N__392 0 Type="VtPWL" V_Tran=pwl(time, 0us,3V,1599us,3V,1600us,0
 V_Source:SRC77  N__388 0 Type="VtPWL" V_Tran=pwl(time, 0us,3V,1599us,3V,1600us,0V,1800us,0V) SaveCurrent=1 
 V_Source:SRC78  N__410 0 Type="VtPWL" V_Tran=pwl(time, 0us,3V,1599us,3V,1600us,0V,1800us,0V) SaveCurrent=1 
 V_Source:SRC79  N__414 0 Type="VtPWL" V_Tran=pwl(time, 0us,3V,1599us,3V,1600us,0V,1800us,0V) SaveCurrent=1 
+"NMOS":MOSFET50  Hidden_2 N__119 N__68 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET51  Hidden_3 N__119 N__48 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET52  Hidden_4 N__119 N__123 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET53  Hidden_5 N__119 N__97 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET54  Hidden_6 N__119 N__99 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET55  Hidden_7 N__119 N__38 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET56  Hidden_8 N__119 N__36 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET57  Hidden_8 N__57 N__129 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET58  Hidden_7 N__57 N__42 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET59  Hidden_6 N__57 N__47 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET60  Hidden_5 N__57 N__125 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET61  Hidden_4 N__57 N__54 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET62  Hidden_3 N__57 N__66 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET63  Hidden_2 N__57 N__37 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET64  N__100 N__78 Bitline_hidden_1 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET65  N__41 N__78 Bitline_hidden_2 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET66  N__40 N__78 Bitline_hidden_3 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET67  N__121 N__78 Bitline_hidden_4 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET68  N__100 N__435 A 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET69  N__41 N__435 T 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET70  N__40 N__435 V 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+"NMOS":MOSFET71  N__121 N__435 X 0 Length=180 nm Width=18000 nm Mode=1 Noise=yes 
+#uselib "sml" , "Comparator"
+Comparator:CMP1  output_1 N__94 Vlow=0.05 V Vhigh=1.2 V 
+#uselib "sml" , "Comparator"
+Comparator:CMP2  output_2 N__29 Vlow=0.05 V Vhigh=1.2 V 
+#uselib "sml" , "Comparator"
+Comparator:CMP3  output_3 N__120 Vlow=0.05 V Vhigh=1.2 V 
+#uselib "sml" , "Comparator"
+Comparator:CMP4  output_4 N__28 Vlow=0.05 V Vhigh=1.2 V 
+#uselib "sml" , "Comparator"
+Comparator:CMP5  output_5 N__60 Vlow=0.05 V Vhigh=1.2 V 
+#uselib "sml" , "Comparator"
+Comparator:CMP6  output_6 N__26 Vlow=0.05 V Vhigh=1.2 V 
+#uselib "sml" , "Comparator"
+Comparator:CMP7  output_7 N__51 Vlow=0.05 V Vhigh=1.2 V 
+#uselib "sml" , "Comparator"
+Comparator:CMP8  output_8 N__25 Vlow=0.05 V Vhigh=1.2 V 
