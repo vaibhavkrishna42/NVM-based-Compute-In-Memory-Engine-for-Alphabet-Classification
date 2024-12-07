@@ -3,10 +3,10 @@ hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
     (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
 
 
-***** Simulation started at Sat Dec  7 18:25:22 2024
+***** Simulation started at Sat Dec  7 21:05:04 2024
       Running on host: "LAPTOP-SDMPAGSO"
       In Directory: "C:\ADS\RRAM_Project\data"
-      Process ID: 27464
+      Process ID: 32644
 
 Processing VAMS source 'C:/ADS/RRAM_Project/RRAM_Project_lib/%R%R%A%M_%Cell/veriloga/veriloga.va'
  compiled source cache is valid
@@ -21,11 +21,15 @@ Warning detected by hpeesofsim in topology check during circuit set up.
     Number of nodes with only one device attached (topology corrected): 8
     Topology correction added to 8 branches
 
+    Matrix is singular (detected at node or branch `Cell_16_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_1__4.Gap').
+The final gnode step did NOT converge in 1 iteration(s) with gnode=0.000000e+00
+The solution with gnode=1.000000e-12 will be accepted
 
 
 TRAN Tran1[1] <RRAM_Project_lib:RRAM_Array_single:schematic>   time=(0 s->1.8 ms)
 
 
 Resource usage:
-  Total stopwatch time     =     8.98 seconds.
+  Total stopwatch time     =     9.28 seconds.
 

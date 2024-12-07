@@ -1,0 +1,27 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Sat Dec  7 19:27:22 2024
+      Running on host: "LAPTOP-SDMPAGSO"
+      In Directory: "C:\ADS\RRAM_Project\data"
+      Process ID: 26680
+
+Processing VAMS source 'C:/ADS/RRAM_Project/RRAM_Project_lib/%R%R%A%M_%Cell/veriloga/veriloga.va'
+ compiled source cache is valid
+Analog module platform compile:
+    [1] amswork.RRAM (valid object cache, no platform compile required)
+    Analog module design library exists, no link required.
+    Matrix is singular (detected at node or branch `Cell_9_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_8_2.Gap').
+The final gnode step did NOT converge in 1 iteration(s) with gnode=0.000000e+00
+The solution with gnode=1.000000e-12 will be accepted
+
+
+TRAN Tran1[1] <RRAM_Project_lib:FUCK_ADS:schematic>   time=(0 s->1.8 ms)
+
+
+Resource usage:
+  Total stopwatch time     =     8.73 seconds.
+
