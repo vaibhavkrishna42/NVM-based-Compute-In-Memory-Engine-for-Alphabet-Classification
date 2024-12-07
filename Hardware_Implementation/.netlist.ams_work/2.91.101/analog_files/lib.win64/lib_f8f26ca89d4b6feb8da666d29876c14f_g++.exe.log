@@ -1,0 +1,7 @@
+=============================================================================
+C:\Program Files\Keysight\ADS2024_Update2/tiburonda/tools/mingw64\bin\g++
+Full path: C:\Program Files\Keysight\ADS2024_Update2/tiburonda/tools/mingw64\bin\g++.exe
+ >C:\Program Files\Keysight\ADS2024_Update2/tiburonda/tools/mingw64\bin\g++ -m64 -shared -static -o c:/ads/rram_project/.netlist.ams_work/2.91.101/analog_files/lib.win64/lib_f8f26ca89d4b6feb8da666d29876c14f.dll C:\ADS\hpeesof\tiburonda-vams-model-cache\2.91.101\lib.win64\841e23e3ba351c054374741ae4472aa2_4be584080f4aef1b006eb441aeb51340.o C:\Program Files\Keysight\ADS2024_Update2\tiburonda/lib.mingw64/libtda_dsl.a C:\Program Files\Keysight\ADS2024_Update2\tiburonda/lib.mingw64/libtda_utils.a C:\Program Files\Keysight\ADS2024_Update2\tiburonda/lib.mingw64/libboost_filesystem-mgw12-mt-s-x64-1_76.a C:\Program Files\Keysight\ADS2024_Update2\tiburonda/lib.mingw64/libboost_system-mgw12-mt-s-x64-1_76.a
+Modifying environment:
+    added: PATH=;C:\Program Files\Keysight\ADS2024_Update2\tiburonda/tools/mingw64/bin
+=============================================================================

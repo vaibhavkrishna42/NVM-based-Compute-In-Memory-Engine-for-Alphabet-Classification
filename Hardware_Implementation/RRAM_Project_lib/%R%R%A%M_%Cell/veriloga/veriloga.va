@@ -1,0 +1,99 @@
+// VerilogA for EE6347_lib, RRAM, veriloga
+
+// VerilogA for MyLibrary_lib, RRAM, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module RRAM(TE, BE,G,T);
+	
+	inout TE,BE;
+	electrical TE,BE,T,G,Gap,Temp,n1;
+// Constants
+	parameter real k      = 1.38e-23;   // Boltzmann Constant in J/K
+	parameter real q      = 1.602e-19;  // Charge of electron in Coloumb
+// Tunneling current related parameters		
+	parameter real g0     = 0.2e-9;    // fitting parameter in meters
+	parameter real V0     = 0.5;       // fitting parameter in volts 
+	parameter real I0     = 0.65e-4;   // fitting parameter in amperes
+// Gap variation related parameters	
+	parameter real ve0    = 5e6;        // Escape Velocity
+	parameter real Eam    = 0.9;        // Activation Energy for vacancy generation in eV
+	parameter real a      = 0.3e-10;   // hopping site distance in meters
+	parameter real gamma0 = 22.5;       // fitting parameter for gamma
+	parameter real b      = 1.0;        // fitting parameter for gamma
+	parameter real c      = 1.0;        // fitting parameter for gamma
+	parameter real L      = 8e-9;       // Thickness of oxide
+    parameter real gmax   = 3.3e-9;       // Maximum gap length
+	parameter real gmin   = 5e-10;      // Minimum gap length  
+	parameter real gini   = 3.3e-9;       // initial gap distance
+// CF radius	
+	parameter real r_cf   = 8e-9;       //  CF radius
+	parameter real rho    = 2.8e-3;      //  CF resistivity, in ohm-meter
+	 
+// Thermal circuits
+        parameter real Rth    = 3e6;       // Effective thermal conductance in J/K/s
+	parameter real Tamb   = 300.0;      // T   
+// CC limit
+	parameter real CC 	  = 10e-6;		// Compliance Current
+      // parameter real          deltaGap0	= 0.02;
+     //  parameter integer	rand_seed_ini	= 0;
+
+        integer	rand_seed;
+	real temp,gap,gamma,Ig,R,area;
+	
+
+analog begin
+    
+     // @(initial_step) begin  
+     //      rand_seed = rand_seed_ini;
+    // end
+
+    area = 3.14*r_cf*r_cf;
+// Updating Temperature
+	temp = Tamb + V(Temp);	
+
+// local electric field enhancement factor factor calculation
+	gamma = gamma0 - b * pow(((gini + V(Gap))/2e-9), c);
+	
+	if (gini + V(Gap) < gmin && V(TE,BE) > 0) begin
+		gamma = 0;
+	end
+	
+	if (gini + V(Gap) > gmax && V(TE,BE) < 0) begin
+		gamma = 0;
+	end
+		
+// Gap dynamics	
+	I(Gap) <+ ve0 * exp(-Eam*q/temp/k) * sinh(q*a*gamma*V(TE,BE)/k/temp/L) ;
+	I(Gap) <+ ddt(V(Gap));
+	gap    = gini + V(Gap) ;
+	
+	if(gap<gmin) begin
+		gap = gmin;
+	end	
+	if ( gap>gmax) begin
+		gap=gmax;
+	end	
+	
+// Stanford Current Model
+	Ig =  I0*exp(-gap/g0)*sinh(V(TE,BE)/V0);
+
+//CC limit		
+	if(Ig >= CC) begin
+		Ig = CC;
+	end
+// Model defination    
+	R        =  (rho*(L-gap))/area; 
+    I(TE,n1) <+ V(TE,n1)/R;   
+	I(n1,BE) <+ Ig;
+	
+// Temperature Dynamics
+	I(Temp) <+ -V(TE,BE)*(Ig);
+	I(Temp) <+ V(Temp)/Rth;	
+// Monitoring gap and temperature for plotting purpose
+	I(G) 	<+ gap;
+	I(T) 	<+ temp;
+
+end
+endmodule

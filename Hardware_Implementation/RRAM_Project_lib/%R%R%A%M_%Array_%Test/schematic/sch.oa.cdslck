@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      jaygu
+HostName                       LAPTOP-SDMPAGSO
+ProcessIdentifier              28828
+ProcessCreationTime_UTC        1733562514
+ProcessCreationTime_Readable   Sat Dec  7 14:38:34 2024 India Standard Time
+AppIdentifier                  OA File System Design Manager
+OSType                         win32
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         C:\ADS\RRAM_Project\RRAM_Project_lib\%R%R%A%M_%Array_%Test\schematic\sch.oa.cdslck
+TimeEditLocked                 Sat Dec  7 15:11:30 2024 India Standard Time

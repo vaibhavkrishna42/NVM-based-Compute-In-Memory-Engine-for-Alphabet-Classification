@@ -1,0 +1,33 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Thu Nov 28 23:58:29 2024
+      Running on host: "LAPTOP-SDMPAGSO"
+      In Directory: "C:\ADS\RRAM_Project\data"
+      Process ID: 45872
+
+Processing VAMS source 'C:/ADS/RRAM_Project/RRAM_Project_lib/%R%R%A%M_%Cell/veriloga/veriloga.va'
+ compiled source cache is valid
+Analog module platform compile:
+    [1] amswork.RRAM (valid object cache, no platform compile required)
+    Analog module design library exists, no link required.
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 2
+
+    Matrix is singular (detected at node or branch `X1.Gap').
+..    Matrix is singular (detected at node or branch `X1.Gap').
+.
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `X1.Gap' and ground.
+
+
+
+TRAN Tran1[1] <RRAM_Project_lib:RRAM_Test:schematic>   time=(0 s->400 ms)
+
+
+Resource usage:
+  Total stopwatch time     =     8.56 seconds.
+

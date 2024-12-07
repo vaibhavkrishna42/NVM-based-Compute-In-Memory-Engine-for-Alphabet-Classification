@@ -1,0 +1,49 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Mon Nov 25 19:43:14 2024
+      Running on host: "LAPTOP-SDMPAGSO"
+      In Directory: "C:\ADS\RRAM_Project\data"
+      Process ID: 29160
+
+Processing VAMS source 'C:/ADS/RRAM_Project/RRAM_Project_lib/%R%R%A%M_%Cell/veriloga/veriloga.va'
+ compiled source cache is valid
+Analog module platform compile:
+    [1] amswork.RRAM
+=============================================================================
+C:\Program Files\Keysight\ADS2024_Update2/tiburonda/tools/mingw64\bin\gcc
+Full path: C:\Program Files\Keysight\ADS2024_Update2/tiburonda/tools/mingw64\bin\gcc.exe
+ >C:\Program Files\Keysight\ADS2024_Update2/tiburonda/tools/mingw64\bin\gcc -O3 -m64 -c -I C:\Program Files\Keysight\ADS2024_Update2\tiburonda/include -x c C:\ADS\hpeesof\tiburonda-vams-model-cache\2.91.101\lib.win64\LAPTOP-SDMPAGSO.29160.70994998\841e23e3ba351c054374741ae4472aa2_4be584080f4aef1b006eb441aeb51340.c -o C:\ADS\hpeesof\tiburonda-vams-model-cache\2.91.101\lib.win64\LAPTOP-SDMPAGSO.29160.70994998\841e23e3ba351c054374741ae4472aa2_4be584080f4aef1b006eb441aeb51340.o
+Modifying environment:
+    added: PATH=;C:\Program Files\Keysight\ADS2024_Update2\tiburonda/tools/mingw64/bin
+=============================================================================
+    Linking the analog module design library
+=============================================================================
+C:\Program Files\Keysight\ADS2024_Update2/tiburonda/tools/mingw64\bin\g++
+Full path: C:\Program Files\Keysight\ADS2024_Update2/tiburonda/tools/mingw64\bin\g++.exe
+ >C:\Program Files\Keysight\ADS2024_Update2/tiburonda/tools/mingw64\bin\g++ -m64 -shared -static -o c:/ads/rram_project/.netlist.ams_work/2.91.101/analog_files/lib.win64/lib_f8f26ca89d4b6feb8da666d29876c14f.dll C:\ADS\hpeesof\tiburonda-vams-model-cache\2.91.101\lib.win64\841e23e3ba351c054374741ae4472aa2_4be584080f4aef1b006eb441aeb51340.o C:\Program Files\Keysight\ADS2024_Update2\tiburonda/lib.mingw64/libtda_dsl.a C:\Program Files\Keysight\ADS2024_Update2\tiburonda/lib.mingw64/libtda_utils.a C:\Program Files\Keysight\ADS2024_Update2\tiburonda/lib.mingw64/libboost_filesystem-mgw12-mt-s-x64-1_76.a C:\Program Files\Keysight\ADS2024_Update2\tiburonda/lib.mingw64/libboost_system-mgw12-mt-s-x64-1_76.a
+Modifying environment:
+    added: PATH=;C:\Program Files\Keysight\ADS2024_Update2\tiburonda/tools/mingw64/bin
+=============================================================================
+
+
+1 spare nodes and 1 spare devices are removed.
+The details can be found in file 'C:\ADS\RRAM_Project\data\RRAM_Array_data\spare_removal.txt'.
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 2
+
+    Matrix is singular (detected at node or branch `X1.Gap').
+    Matrix is singular (detected at node or branch `X1.Gap').
+The final gnode step did NOT converge in 1 iteration(s) with gnode=0.000000e+00
+The solution with gnode=1.000000e-12 will be accepted
+
+
+TRAN Tran1[1] <RRAM_Project_lib:RRAM_Array:schematic>   time=(0 s->1 us)
+
+
+Resource usage:
+  Total stopwatch time     =    10.09 seconds.
+

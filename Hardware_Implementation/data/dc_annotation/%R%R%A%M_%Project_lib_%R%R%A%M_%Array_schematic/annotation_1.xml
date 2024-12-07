@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DCOPData Version="1.0" Time="Mon Nov 25 19:43:24 2024" Simulator="hpeesofsim">
+ <Controller name="Tran1">
+  <SweepCondition>
+   <P>time: 0.0000000000000000e+00</P>
+  </SweepCondition>
+  <DC_OPDeclaration/>
+  <DC_Voltages>
+   <V>0: 0.0000000000000000e+00</V>
+   <V>G: -1.6500000000000002e+03</V>
+   <V>N__1: -1.5000000000000000e+14</V>
+   <V>TE: 0.0000000000000000e+00</V>
+   <V>V_Probe1.P1: -1.6500000000000002e+03</V>
+   <GV>0: 0.0000000000000000e+00</GV>
+  </DC_Voltages>
+  <DC_PinCurrents>
+   <I>SRC1: 0.0000000000000000e+00, 0.0000000000000000e+00</I>
+   <I>V_Probe1: 0.0000000000000000e+00</I>
+   <I>X1: 0.0000000000000000e+00, 0.0000000000000000e+00, 3.3000000000000002e-09, 3.0000000000000000e+02</I>
+  </DC_PinCurrents>
+  <DC_OPInstances/>
+ </Controller>
+</DCOPData>

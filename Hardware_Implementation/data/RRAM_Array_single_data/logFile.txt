@@ -1,0 +1,205 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Sat Dec  7 22:25:23 2024
+      Running on host: "LAPTOP-SDMPAGSO"
+      In Directory: "C:\ADS\RRAM_Project\data"
+      Process ID: 28320
+
+Processing VAMS source 'C:/ADS/RRAM_Project/RRAM_Project_lib/%R%R%A%M_%Cell/veriloga/veriloga.va'
+ compiled source cache is valid
+Analog module platform compile:
+    [1] amswork.RRAM (valid object cache, no platform compile required)
+    Analog module design library exists, no link required.
+    Matrix is singular (detected between nodes or branches `Cell_1_5.Gap' and `Cell_17_5.Gap').
+..    Matrix is singular (detected at node or branch `Cell_1_5.Gap').
+.    Matrix is singular (detected at node or branch `Cell_17_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_16_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_15_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_14_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_13_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_12_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_11_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_10_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_3_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_2_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_5_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_9_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_8_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_7_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_6_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_4_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_1_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_17_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_16_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_15_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_14_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_13_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_12_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_11_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_10_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_9__1.Gap').
+    Matrix is singular (detected at node or branch `Cell_2_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_4_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_9_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_8_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_6_5.Gap').
+    Matrix is singular (detected at node or branch `Cell_7_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_5_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_3_1.Gap').
+    Matrix is singular (detected at node or branch `Cell_9_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_8_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_7_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_5_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_1_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_17_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_16_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_15_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_14_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_13_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_12_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_11_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_10_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_2_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_3_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_4_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_6_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_1_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_17_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_16_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_15_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_14_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_13_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_12_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_11_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_10_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_9__2.Gap').
+    Matrix is singular (detected at node or branch `Cell_2_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_4_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_9_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_8_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_6_6.Gap').
+    Matrix is singular (detected at node or branch `Cell_7_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_5_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_3_2.Gap').
+    Matrix is singular (detected at node or branch `Cell_9_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_8_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_6_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_7_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_4_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_1_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_17_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_16_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_15_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_14_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_13_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_12_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_11_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_10_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_9__4.Gap').
+    Matrix is singular (detected at node or branch `Cell_2_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_3_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_5_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_3_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_5_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_9_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_8_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_7_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_6_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_4_4.Gap').
+    Matrix is singular (detected at node or branch `Cell_1_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_17_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_16_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_15_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_14_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_13_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_12_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_11_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_10_8.Gap').
+    Matrix is singular (detected at node or branch `Cell_9_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_8_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_6_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_7_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_4_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_1_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_17_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_16_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_15_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_14_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_13_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_12_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_11_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_10_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_9__3.Gap').
+    Matrix is singular (detected at node or branch `Cell_2_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_3_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_5_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_1_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_17_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_16_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_15_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_14_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_13_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_12_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_11_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_10_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_3_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_5_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_9_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_8_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_7_7.Gap').
+    Matrix is singular (detected at node or branch `Cell_6_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_4_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_2_3.Gap').
+    Matrix is singular (detected at node or branch `Cell_2_4.Gap').
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_1_5.Gap' and ground.
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_17_5.Gap' and ground.
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_16_5.Gap' and ground.
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_15_5.Gap' and ground.
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_14_5.Gap' and ground.
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_13_5.Gap' and ground.
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_12_5.Gap' and ground.
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_11_5.Gap' and ground.
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_10_5.Gap' and ground.
+
+Warning detected by hpeesofsim during DC analysis `Tran1'.
+    A virtual resistance of 1 TOhms 
+    was added between `Cell_3_5.Gap' and ground.
+
+
+
+TRAN Tran1[1] <RRAM_Project_lib:RRAM_Array_single:schematic>   time=(0 s->1.8 ms)
+
+
+Resource usage:
+  Total stopwatch time     =    13.29 seconds.
+
