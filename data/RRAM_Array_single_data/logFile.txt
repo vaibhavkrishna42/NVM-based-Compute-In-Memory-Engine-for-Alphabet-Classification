@@ -3,10 +3,10 @@ hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
     (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
 
 
-***** Simulation started at Sat Dec  7 13:41:19 2024
+***** Simulation started at Sat Dec  7 18:25:22 2024
       Running on host: "LAPTOP-SDMPAGSO"
       In Directory: "C:\ADS\RRAM_Project\data"
-      Process ID: 29804
+      Process ID: 27464
 
 Processing VAMS source 'C:/ADS/RRAM_Project/RRAM_Project_lib/%R%R%A%M_%Cell/veriloga/veriloga.va'
  compiled source cache is valid
@@ -27,5 +27,5 @@ TRAN Tran1[1] <RRAM_Project_lib:RRAM_Array_single:schematic>   time=(0 s->1.8 ms
 
 
 Resource usage:
-  Total stopwatch time     =     8.93 seconds.
+  Total stopwatch time     =     8.98 seconds.
 
