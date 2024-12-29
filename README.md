@@ -17,4 +17,4 @@ A 2-layer RRAM array was designed for hardware inference. The Multiply-Accumulat
 We noticed a surprisingly similar accuracy with and without an activation in the software sicne the output of layer 1 had to be further binarized before being fed into layer 2.
 The hardware inference yielded an accuracy of **58%**.  
 
-#### A detailed report of the project can be found at []
+### A detailed report of the project can be found at : [PDF](EE6347_Project_Report.pdf)
